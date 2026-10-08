@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://vvvvhe.github.io/the-game/sitemap.xml
