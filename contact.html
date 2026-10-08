@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · The Game</title>
+<meta name="description" content="Contact the developer of The Game about bugs, accessibility, privacy or legal questions.">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'none'; form-action 'self' mailto:; base-uri 'none'; object-src 'none'">
+<link rel="icon" href="assets/img/icon.png" type="image/png">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+ <div class="wrap header-inner">
+  <a class="brand" href="index.html"><img src="assets/img/icon.png" alt="" width="32" height="32"><span>The Game</span></a>
+  <nav aria-label="Main">
+   <ul class="nav-list">
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="download.html" >Download</a></li>
+    <li><a href="versions.html" >All versions</a></li>
+    <li><a href="contact.html" aria-current="page">Contact</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+ <h1>Contact</h1>
+ <p>Email: <a href="mailto:theacreatorstudios@gmail.com">theacreatorstudios@gmail.com</a></p>
+ <p>You can also use the form below. It does not send anything to this website. When you select <strong>Open email to send</strong>, your own email app opens with the message filled in, and nothing is sent until you press Send there. This means the form works only if your device has an email app set up. Otherwise, copy the address above.</p>
+ <form class="contact" data-to="theacreatorstudios@gmail.com" novalidate aria-describedby="form-about">
+  <p id="form-about" class="hint">Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required. We ask only for what we need to reply.</p>
+  <div class="field">
+   <label for="topic">Topic</label>
+   <select id="topic" name="topic">
+    <option>Bug report</option>
+    <option>Accessibility</option>
+    <option>Privacy request</option>
+    <option>Legal or copyright</option>
+    <option>Other</option>
+   </select>
+  </div>
+  <div class="field">
+   <label for="name">Name (optional)</label>
+   <input id="name" name="name" type="text" autocomplete="name">
+  </div>
+  <div class="field">
+   <label for="email">Your email address <span class="req" aria-hidden="true">*</span></label>
+   <p class="hint" id="email-hint">Used only to reply to you.</p>
+   <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-hint email-error" aria-invalid="false">
+   <p class="error" id="email-error"></p>
+  </div>
+  <div class="field">
+   <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+   <p class="hint" id="message-hint">For bug reports, include your operating system and game version.</p>
+   <textarea id="message" name="message" required aria-describedby="message-hint message-error" aria-invalid="false"></textarea>
+   <p class="error" id="message-error"></p>
+  </div>
+  <div class="check">
+   <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error" aria-invalid="false">
+   <label for="consent">I agree that Acreator Studio (Vahe Hakobyan) may use my email address and message to reply to me, as explained in the <a href="privacy.html#email">privacy policy</a>. I can withdraw this at any time. <span class="req" aria-hidden="true">*</span></label>
+  </div>
+  <p class="error" id="consent-error"></p>
+  <div><button class="button" type="submit">Open email to send</button></div>
+  <p role="status" aria-live="polite" class="hint"></p>
+ </form>
+ <h2>Business details</h2>
+ <p>See the <a href="legal.html">legal notice</a>.</p>
+</div>
+
+</main>
+<footer class="site-footer">
+ <div class="wrap footer-grid">
+  <div>
+   <p class="footer-title">The Game</p>
+   <p>An independent game by Acreator Studio (Vahe Hakobyan).<br>Download files are named “Sunspot County”, the game’s earlier working title.</p>
+   <p>This website uses no cookies, no analytics and no third-party content.</p>
+  </div>
+  <nav aria-label="Legal">
+   <ul class="footer-links">
+    <li><a href="privacy.html" >Privacy policy</a></li>
+    <li><a href="cookies.html" >Cookie policy</a></li>
+    <li><a href="terms.html" >Terms and conditions</a></li>
+    <li><a href="refunds.html" >Refund policy</a></li>
+    <li><a href="legal.html" >Legal notice and business details</a></li>
+    <li><a href="licenses.html" >Credits and licences</a></li>
+    <li><a href="accessibility.html" >Accessibility</a></li>
+   </ul>
+  </nav>
+ </div>
+ <div class="wrap footer-base"><p>© 2026 Acreator Studio (Vahe Hakobyan). All game content, artwork and screenshots on this site are from The Game and are owned by its developer unless stated in <a href="licenses.html">Credits and licences</a>.</p></div>
+</footer>
+</body>
+</html>
